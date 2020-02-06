@@ -18,6 +18,7 @@ app.use("/getTestData",require("./router/test"));
 app.use("/getHomePageContent",require("./router/home_page_content"));
 app.use("/getHotGoods",require("./router/hotgoods"));
 app.use("/getCategory",require("./router/category"));
+app.use("/getCategoryGoods",require("./router/category_goods"));
 
 const port = process.env.PORT || 3000;
 app.listen(port,()=>{

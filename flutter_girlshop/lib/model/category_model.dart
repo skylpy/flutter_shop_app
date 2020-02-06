@@ -66,8 +66,8 @@ class Data {
     if(this.secondCategoryVO != null){
       data['secondCategoryVO'] = this.secondCategoryVO.map((v)=>v.toJson()).toList();
     }
-    comments = this.comments;
-    image = this.image;
+    data['comments'] = this.comments;
+    data['image'] = this.image;
 
     return data;
   }

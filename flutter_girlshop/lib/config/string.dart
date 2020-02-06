@@ -10,6 +10,9 @@ class KString {
   static const String loadReadyText = "上拉加载";
   static const String recommentText = '商品推荐';
   static const String hotGoodTitle = '火爆专区';
+  static const String noMoreText = '没有更多了';
+  static const String toBottomText ='已经到底啦';
+  static const String noMoreData ='暂时没有数据';
 
 
 }
