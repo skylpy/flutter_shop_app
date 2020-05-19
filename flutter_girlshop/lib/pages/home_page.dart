@@ -359,10 +359,11 @@ class RecommendUI extends StatelessWidget {
         ),
         child: Column(
           children: <Widget>[
+            //防止溢出
             Expanded(
                 child: Image.network(
-              recommendList[index]['image'],
-              fit: BoxFit.contain,
+                recommendList[index]['image'],
+                fit: BoxFit.contain,
             )),
             Text(
               '¥${recommendList[index]['presentPrice']}',
