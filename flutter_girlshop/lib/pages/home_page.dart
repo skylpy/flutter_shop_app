@@ -197,7 +197,10 @@ class _HomePageState extends State<HomePage>
   Widget _hotGoods() {
     return Container(
       child: Column(
-        children: <Widget>[hotTitle, _wrapList()],
+        children: <Widget>[
+          hotTitle,
+          _wrapList()
+        ],
       ),
     );
   }

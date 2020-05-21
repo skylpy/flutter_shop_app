@@ -145,7 +145,7 @@ class _LeftCategoryNavState extends State<LeftCategoryNav> {
     
     request('getCategoryGoods',formData: data).then((val){
       var data = json.decode(val.toString());
-      print(data);
+      print('getCategoryGoods======'+ data.toString());
       CategoryGoodListModel goodList = CategoryGoodListModel.fromJson(data);
       Provide.value<CategoryGoodsListProvide>(context).getGoodsList(goodList.data);
     });
@@ -216,6 +216,7 @@ class _RightCategoryNavPage extends State<RightCategoryNav> {
     );
   }
 
+
   _getGoodList(context,String secontCategoryId){
     var data = {
       'firstCategoryId':Provide.value<CategoryProvide>(context).firstCategoryId,
@@ -244,6 +245,7 @@ class CategoryGoodList extends StatefulWidget {
 class _CategoryGoodListState extends State<CategoryGoodList> {
 
   GlobalKey<RefreshFooterState> _footerKey = new GlobalKey<RefreshFooterState>();
+  //滚动控制
   var scrollController = new ScrollController();
 
   @override
@@ -273,8 +275,8 @@ class _CategoryGoodListState extends State<CategoryGoodList> {
                     moreInfoColor: KColor.refreshTextColor,
                     showMore: true,
                     noMoreText: Provide.value<CategoryProvide>(context).noMoreText,
-                    moreInfo: '加载中...',
-                    loadReadyText: '上拉加载',
+                    moreInfo: KString.loading,//'加载中...',
+                    loadReadyText: KString.loadReadyText,//'上拉加载',
 
                   ),
                   child: ListView.builder(
@@ -309,6 +311,7 @@ class _CategoryGoodListState extends State<CategoryGoodList> {
     );
   }
 
+  //上啦加载更多的方法
   void _getMoreList(){
     Provide.value<CategoryProvide>(context).addPage();
     var data = {
