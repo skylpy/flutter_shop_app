@@ -11,6 +11,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../provide/category_goods_list_provide.dart';
 import '../model/category_good_list_model.dart';
 import 'package:fluttertoast/fluttertoast.dart';
+import '../routers/application.dart';
 
 //分类页面
 class CategoryPage extends StatefulWidget {
@@ -339,7 +340,8 @@ class _CategoryGoodListState extends State<CategoryGoodList> {
 
     return InkWell(
       onTap: (){
-
+        Application.router.navigateTo(
+            context, "/detail?id=${newList[index].goodsId}");
       },
       child: Container(
         padding: EdgeInsets.only(top: 5.0,bottom: 5.0),

@@ -10,11 +10,12 @@ Future request(url,{formData})async{
 
     Response response ;
     Dio dio = new Dio();
-    dio.options.contentType = ContentType.parse('application/x-www-from-urlencoded');
+    dio.options.contentType = ContentType.parse('application/x-www-form-urlencoded');
     if(formData == null){
       response = await dio.post(servicePath[url]);
 
     }else{
+
       response = await dio.post(servicePath[url],data: formData);
     }
 

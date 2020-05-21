@@ -146,7 +146,10 @@ class _HomePageState extends State<HomePage>
     if (hotGoodsList.length != 0) {
       List<Widget> listWidget = hotGoodsList.map((val) {
         return InkWell(
-          onTap: () {},
+          onTap: () {
+            Application.router.navigateTo(
+                context, "/detail?id=${val['goodsId']}");
+          },
           child: Container(
             width: ScreenUtil().setWidth(372),
             color: Colors.white,
@@ -350,7 +353,10 @@ class RecommendUI extends StatelessWidget {
 
   Widget _item(index, context) {
     return InkWell(
-      onTap: () {},
+      onTap: () {
+        Application.router.navigateTo(
+            context, "/detail?id=${recommendList[index]['goodsId']}");
+      },
       child: Container(
         width: ScreenUtil().setWidth(280),
         padding: EdgeInsets.all(8.0),
@@ -413,6 +419,8 @@ class Floor extends StatelessWidget {
 
   void jumpDetail(context, String goodId) {
     //跳转到商品详情
+    Application.router.navigateTo(
+        context, "/detail?id=${goodId}");
   }
 
   @override

@@ -26,6 +26,8 @@ class DetailsTopArea extends StatelessWidget {
               children: <Widget>[
                 _goodsImage(goodsInfo.image1),
                 _goodsName(goodsInfo.goodsName),
+                _goodsNum(goodsInfo.goodsSerialNumber),
+                _goodsPrice(goodsInfo.presentPrice, goodsInfo.oriPrice)
 
               ],
             ),
@@ -58,6 +60,52 @@ class DetailsTopArea extends StatelessWidget {
         style: TextStyle(
           fontSize: ScreenUtil().setSp(30),
         ),
+      ),
+    );
+  }
+
+  //商品名称
+  Widget _goodsNum(num){
+
+    return Container(
+      width: ScreenUtil().setWidth(730),
+      padding: EdgeInsets.only(left: 15.0),
+      margin: EdgeInsets.only(top: 8.0),
+      child: Text(
+        '编号：${num}',
+        maxLines: 1,
+        style: TextStyle(
+          color: KColor.detailGoodId
+        ),
+      ),
+    );
+  }
+
+  //商品名称
+  Widget _goodsPrice(presentPrice,oriPrice){
+
+    return Container(
+      width: ScreenUtil().setWidth(730),
+      padding: EdgeInsets.only(left: 15.0),
+      margin: EdgeInsets.only(top: 8.0),
+      child: Row(
+        children: <Widget>[
+          Text(
+            '¥${presentPrice}',
+            style: TextStyle(
+                color: KColor.presentPriceTextColor,
+                fontSize: ScreenUtil().setSp(40)
+            ),
+          ),
+          Text(
+            '  市场价：¥${oriPrice}',
+            style: TextStyle(
+
+              color: KColor.oriPriceTextColor,
+              decoration: TextDecoration.lineThrough,
+            ),
+          )
+        ],
       ),
     );
   }

@@ -14,5 +14,8 @@ class KString {
   static const String toBottomText ='已经到底啦';
   static const String noMoreData ='暂时没有数据';
   static const String detailsPageTitle ='商品详情';
+  static const String detailsPageExplain ='  说明： > 急速送达 > 正品保证';
 
+  static const String addToCartText ='加入购物车';
+  static const String buyGoodsText ='马上购买';
 }

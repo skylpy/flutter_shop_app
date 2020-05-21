@@ -11,6 +11,7 @@ class KColor {
 
     static const Color presentPriceTextColor = Color.fromRGBO(182, 9, 9, 1.0);//最新价格
     static const Color oriPriceTextColor = Colors.black26;//y原来价格
+    static const Color detailGoodId = Colors.black26;//商品详情编号
 
-
+    static const Color detailTextColor = Color.fromRGBO(132, 95, 63, 1.0);//详情文本颜色
 }

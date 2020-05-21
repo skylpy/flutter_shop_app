@@ -5,6 +5,12 @@ import '../service/http_service.dart';
 import 'dart:convert';
 import 'package:provide/provide.dart';
 import '../provide/details_info_provide.dart';
+import './details_page/details_top_area.dart';
+import './details_page/details_top_explain.dart';
+import './details_page/details_tabbar.dart';
+import './details_page/details_web.dart';
+import './details_page/details_bottom.dart';
+
 
 class DetailsPage extends StatelessWidget{
 
@@ -37,13 +43,17 @@ class DetailsPage extends StatelessWidget{
               children: <Widget>[
                 ListView(
                   children: <Widget>[
+                    DetailsTopArea(),
+                    DetailsExplain(),
+                    DetailsTaBar(),
+                    DetailsWeb()
 
                   ],
                 ),
                 Positioned(
                   bottom: 0,
                   left: 0,
-                  child: Text('底部组件'),
+                  child: DetailBottom(),
                 ),
               ],
             );
