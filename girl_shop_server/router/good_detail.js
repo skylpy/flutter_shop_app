@@ -3,7 +3,7 @@ const router = express();
 const config = require("./config");
 var bodyParser = require('body-parser');
 // 创建 application/x-www-form-urlencoded 编码解析
-var urlencodedParser = bodyParser.urlencoded({extended:true});
+var urlencodedParser = bodyParser.urlencoded({extended:false});
 const base_url = "http://" + config.IP + ":" + config.PORT + "/images/goods/";
 
 
