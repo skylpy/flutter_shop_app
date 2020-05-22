@@ -58,7 +58,7 @@ class DetailsPage extends StatelessWidget{
               ],
             );
           }else{
-            return Text('加载中...');
+            return Text(KString.loading);
           }
         },
       ),

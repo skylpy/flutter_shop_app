@@ -14,4 +14,9 @@ class KColor {
     static const Color detailGoodId = Colors.black26;//商品详情编号
 
     static const Color detailTextColor = Color.fromRGBO(132, 95, 63, 1.0);//详情文本颜色
+
+    static const Color checkBoxColor = Color.fromRGBO(132, 95, 63, 1.0);//默认主要颜色
+
+    static const Color deleteIconColor = Colors.black26;//购物车删除按钮颜色
+
 }

@@ -3,6 +3,7 @@ import 'package:flutter_girlshop/config/color.dart';
 import 'package:flutter_girlshop/config/index.dart';
 import '../../provide/details_info_provide.dart';
 import '../../provide/current_index_provide.dart';
+import '../../provide/cart_provide.dart';
 import 'package:provide/provide.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -45,32 +46,38 @@ class DetailBottom extends StatelessWidget{
                 ),
               ),
               //TODO 购物商品数量
-              Positioned(
-                top: 0,
-                right: 10,
-                child: Container(
-                  padding: EdgeInsets.fromLTRB(6, 3, 6, 3),
-                  decoration: BoxDecoration(
-                    color: KColor.primaryColor,
-                    border: Border.all(width: 2,color: Colors.white),
-                    borderRadius: BorderRadius.circular(12.0),
-                  ),
-                  child: Text(
-                    '4',
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: ScreenUtil().setSp(22),
+              Provide<CartProvide>(
+                builder: (context,child,val){
+                  int goodsCount = Provide.value<CartProvide>(context).allGoodsCount;
+                  return Positioned(
+                    top: 0,
+                    right: 10,
+                    child: Container(
+                      padding: EdgeInsets.fromLTRB(6, 3, 6, 3),
+                      decoration: BoxDecoration(
+                        color: KColor.primaryColor,
+                        border: Border.all(width: 2,color: Colors.white),
+                        borderRadius: BorderRadius.circular(12.0),
+                      ),
+                      child: Text(
+                        '${goodsCount}',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: ScreenUtil().setSp(22),
+                        ),
+                      ),
                     ),
-                  ),
-                ),
+                  );
+                },
               ),
+
             ],
           ),
 
           InkWell(
-            onTap: (){
+            onTap: () async{
               // TODO 添加至购物车
-
+              await Provide.value<CartProvide>(context).save(goodsID, goodsname, count, price, images);
             },
             child: Container(
               alignment: Alignment.center,

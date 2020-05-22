@@ -18,4 +18,6 @@ class KString {
 
   static const String addToCartText ='加入购物车';
   static const String buyGoodsText ='马上购买';
+
+  static const String cartPageText ='购物车';
 }

@@ -9,6 +9,8 @@ import './routers/routers.dart';
 import 'package:fluro/fluro.dart';
 import './routers/application.dart';
 import './provide/details_info_provide.dart';
+import './provide/cart_provide.dart';
+
 
 void main() {
 
@@ -16,12 +18,14 @@ void main() {
   var categoryProvide = CategoryProvide();
   var categoryGoodsListProvide = CategoryGoodsListProvide();
   var detailsInfoProvide = DetailsInfoProvide();
+  var cartProvide = CartProvide();
   var provides = Providers();
 
   provides
     ..provide(Provider<CategoryProvide>.value(categoryProvide))
     ..provide(Provider<CategoryGoodsListProvide>.value(categoryGoodsListProvide))
     ..provide(Provider<DetailsInfoProvide>.value(detailsInfoProvide))
+    ..provide(Provider<CartProvide>.value(cartProvide))
     ..provide(Provider<CurrentIndexProvide>.value(currentIndexProvide));
 
   runApp(ProviderNode(child: MyApp(), providers: provides));
