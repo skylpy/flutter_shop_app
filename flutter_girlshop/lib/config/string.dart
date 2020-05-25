@@ -20,4 +20,10 @@ class KString {
   static const String buyGoodsText ='马上购买';
 
   static const String cartPageText ='购物车';
+
+  static const String allCheck ='全选';
+
+  static const String allPriceTitle = '合计';
+
+  static const String allPriceAdvTitle = '满10元免配送费，预购免配送费';
 }

@@ -29,6 +29,7 @@ class CartProvide with ChangeNotifier{
         allPrice = 0;
         allGoodsCount = 0;//吧商品总数设置为0
 
+        //
         tempList.forEach((item){
 
             if (item['goodsId'] == goodsId){
@@ -84,7 +85,7 @@ class CartProvide with ChangeNotifier{
             isAllCheck = true;
             tempList.forEach((item){
 
-
+                //是否为全选判断
                 if (item['isCheck']){
                     //算出总价
                     allPrice += (item['price']*item['count']);
@@ -175,4 +176,25 @@ class CartProvide with ChangeNotifier{
       prefs.setString('cartInfo', cartString);
       await getCartInfo();
     }
+
+
+    //全选状态处理
+    changeAllCheckBtnState(bool isCheck) async{
+      SharedPreferences prefs = await SharedPreferences.getInstance();
+      cartString = prefs.getString('cartInfo'); //获取持久化存储的值
+      List<Map> tempList = (json.decode(cartString.toString()) as List).cast();
+      List<Map> newList = [];
+
+      for (var item in tempList){
+        var newItem = item;
+        newItem['isCheck'] = isCheck;
+        newList.add(newItem);
+      }
+
+
+      cartString = json.encode(newList).toString();
+      prefs.setString('cartInfo', cartString);
+      await getCartInfo();
+    }
+
 }

@@ -3,6 +3,7 @@ import '../config/index.dart';
 import 'package:provide/provide.dart';
 import '../provide/cart_provide.dart';
 import './cart_page/cart_item.dart';
+import './cart_page/cart_bottom.dart';
 
 class CartPage extends StatelessWidget {
   @override
@@ -37,7 +38,7 @@ class CartPage extends StatelessWidget {
                 Positioned(
                     bottom: 0,
                     left: 0,
-                    child: Text('结算组件')
+                    child: CartBottom()
                 )
               ],
             );
