@@ -17,7 +17,9 @@
   shared_preferences: ^0.5.1<br>
   //  provider: ^3.1.0
 
-![images](shop_image/home2%402x.png)
+# 效果图
+
+![images](shop_image/home2%402x.png width=3)
 ![images](shop_image/home3@2x.png)
 ![images](shop_image/home4@2x.png)
 ![images](shop_image/categroy1@2x.png)
