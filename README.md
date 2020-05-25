@@ -20,11 +20,9 @@
 # 效果图
 
 <div align="center">
-	<img src="shop_image/home2%402x.png" alt="Editor" width="500">
+	<img src="shop_image/home2%402x.png" alt="Editor" width="300">
+	<img src="shop_image/home3@2x.png" alt="Editor" width="300">
+	<img src="shop_image/home4@2x.png" alt="Editor" width="300">
+	<img src="shop_image/categroy1@2x.png" alt="Editor" width="300">
+	<img src="shop_image/person1@2x.png" alt="Editor" width="300">
 </div>
-
-![images](shop_image/home2%402x.png)
-![images](shop_image/home3@2x.png)
-![images](shop_image/home4@2x.png)
-![images](shop_image/categroy1@2x.png)
-![images](shop_image/person1@2x.png)
