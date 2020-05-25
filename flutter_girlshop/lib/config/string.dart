@@ -26,4 +26,11 @@ class KString {
   static const String allPriceTitle = '合计';
 
   static const String allPriceAdvTitle = '满10元免配送费，预购免配送费';
+
+
+  static const String pendingPayText = '待付款';
+  static const String toBeSend = '待发货';
+  static const String toBeReceived = '待收货';
+  static const String evaluateText = '待评价';
+  static const String orderTitle = '我的订单';
 }
