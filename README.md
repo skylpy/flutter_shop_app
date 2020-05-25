@@ -19,6 +19,10 @@
 
 # 效果图
 
+<div align="center">
+	<img src="shop_image/home2%402x.png" alt="Editor" width="500">
+</div>
+
 ![images](shop_image/home2%402x.png)
 ![images](shop_image/home3@2x.png)
 ![images](shop_image/home4@2x.png)
