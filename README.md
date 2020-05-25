@@ -19,7 +19,7 @@
 
 # 效果图
 
-![images](shop_image/home2%402x.png width=3)
+![images](shop_image/home2%402x.png)
 ![images](shop_image/home3@2x.png)
 ![images](shop_image/home4@2x.png)
 ![images](shop_image/categroy1@2x.png)
