@@ -19,7 +19,7 @@
 
 # 效果图
 
-<div align="center">
+<div align="left">
 	<img src="shop_image/home2%402x.png" alt="Editor" width="300">
 	<img src="shop_image/home3@2x.png" alt="Editor" width="300">
 	<img src="shop_image/home4@2x.png" alt="Editor" width="300">
