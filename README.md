@@ -27,3 +27,5 @@
 	<img src="shop_image/cart1@2x.png" alt="Editor" width="300">
 	<img src="shop_image/person1@2x.png" alt="Editor" width="300">
 </div>
+
+# 本项目以学习为目的，不能做任何商业用途
