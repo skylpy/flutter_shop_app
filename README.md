@@ -24,5 +24,6 @@
 	<img src="shop_image/home3@2x.png" alt="Editor" width="300">
 	<img src="shop_image/home4@2x.png" alt="Editor" width="300">
 	<img src="shop_image/categroy1@2x.png" alt="Editor" width="300">
+	<img src="shop_image/cart1@2x.png" alt="Editor" width="300">
 	<img src="shop_image/person1@2x.png" alt="Editor" width="300">
 </div>
