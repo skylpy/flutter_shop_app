@@ -26,6 +26,9 @@
 	<img src="shop_image/categroy1@2x.png" alt="Editor" width="300">
 	<img src="shop_image/cart1@2x.png" alt="Editor" width="300">
 	<img src="shop_image/person1@2x.png" alt="Editor" width="300">
+	<img src="shop_image/dateil1@2x.png" alt="Editor" width="300">
+	<img src="shop_image/dateil2@2x.png" alt="Editor" width="300">
+	<img src="shop_image/dateil3@2x.png" alt="Editor" width="300">
 </div>
 
 # 本项目以学习为目的，不能做任何商业用途
