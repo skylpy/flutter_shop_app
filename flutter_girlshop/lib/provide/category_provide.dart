@@ -3,7 +3,7 @@ import '../model/category_model.dart';
 
 class CategoryProvide with ChangeNotifier{
 
-  List<SecondCategoryVO> secondCategoryGoodList = [];//耳机分类列表
+  List<SecondCategoryVO> secondCategoryGoodList = [];//二级分类列表
   int secontCategoryIndex = 0;//二级分类
   int firstCategoryIndex = 0;//以及分类
   String secontCategoryId = '4';//二级id

@@ -10,8 +10,6 @@ import '../../config/index.dart';
 class DetailsTaBar extends StatelessWidget {
 
 
-
-
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
